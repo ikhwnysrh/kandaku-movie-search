@@ -34,12 +34,14 @@ const App = () => {
   return (
       <div className="App">
         <header className="App-header">
-          <h1>KANDAKU MOVIE</h1>
+          <h1>KANDAKU<span className='text-movie'>MOVIE</span></h1>
           <input 
             placeholder='cari apa ki...' 
             className='Movie-search'
             onChange={({ target }) => search(target.value)}
           />
+          <h4 className="text-h2">Popular Movies</h4>
+          <div className='line'></div>
           <div className="Movie-container">
             <PopularMovieList />
           </div>
