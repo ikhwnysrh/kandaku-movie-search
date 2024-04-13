@@ -30,8 +30,6 @@ const App = () => {
       setPopularMovies(query.results)
     }
   }
-  
-  console.log({ popularMovies: popularMovies })
 
   return (
       <div className="App">

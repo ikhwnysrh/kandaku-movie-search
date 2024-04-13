@@ -23,7 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 22px;
 }
 
 h1{
@@ -31,14 +31,14 @@ h1{
 }
 
 .Movie-wrapper{
-  width: 500px;
-  border-radius: 10px;
+  width: 300px;
+  border-radius: 15px;
   background-color: antiquewhite;
   color: black;
 }
 
 .Movie-search{
-  border-radius: 10px;
+  border-radius: 15px;
   height: 24px;
   font-size: 24px;
   margin-bottom: 32px;
@@ -51,14 +51,17 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 80px;
   font-weight: bold;
+}
+
+.Movie-image{
+  width: 300px;
 }
 
 .Movie-date{
   font-weight: bold;
-  font-style: italic;
-  margin-top: 14px;
+  margin-top: 10px;
   margin-bottom: 8px;
 }
 .release-date{
@@ -68,7 +71,7 @@ h1{
 }
 
 .Movie-rate{
-  font-size: 26px;
+  font-size: 24px;
   font-weight: bold;
   color: red;
   margin-bottom: 14px;
@@ -81,11 +84,21 @@ h1{
 
 @media (max-width: 768px) {
   .Movie-wrapper{
-    width: 330px;
+    width: 170px;
+  }
+
+  .Movie-title{
+    height: 60px;
+    font-size: 16px;
   }
 
   .Movie-image{
-    width: 330px;
+    width: 170px;
+  }
+
+  .Movie-date{
+    margin-top: 8px;
+    margin-bottom: 6px;
   }
 
   .Movie-search{
