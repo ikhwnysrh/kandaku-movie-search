@@ -83,8 +83,11 @@ h1{
 }
 
 @media (max-width: 768px) {
+  .Movie-container{
+    gap: 18px;
+  }
   .Movie-wrapper{
-    width: 170px;
+    width: 165px;
   }
 
   .Movie-title{
@@ -93,7 +96,7 @@ h1{
   }
 
   .Movie-image{
-    width: 170px;
+    width: 165px;
   }
 
   .Movie-date{
