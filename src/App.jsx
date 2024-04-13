@@ -17,8 +17,8 @@ const App = () => {
         <div className="Movie-wrapper" key={i}>
           <div className="Movie-title">{movie.title}</div>
           <img className="Movie-image" src={`${process.env.REACT_APP_BASEIMGURL}/${movie.poster_path}`}/>
-          <div className="Movie-date">{movie.release_date}</div>
-          <div className="Movie-rate">{movie.vote_average.toFixed(1)}</div>
+          <div className="Movie-date"><span className='release-date'>Release date: </span><br/>{movie.release_date}</div>
+          <div className="Movie-rate"><span className='rating'>Rating: </span><br/>{movie.vote_average.toFixed(1)}</div>
         </div>
       )
     })
