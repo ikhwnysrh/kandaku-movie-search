@@ -100,6 +100,16 @@ h1{
     margin-top: 8px;
     margin-bottom: 6px;
   }
+  .release-date{
+    font-size: 16px;
+  }
+
+  .Movie-rate{
+    font-size: 20px;
+  }
+  .rating{
+    font-size: 16px;
+  }
 
   .Movie-search{
     width: 295px;
