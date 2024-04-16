@@ -40,8 +40,6 @@ const App = () => {
             className='Movie-search'
             onChange={({ target }) => search(target.value)}
           />
-          <h4 className="text-h2">Popular Movies</h4>
-          <div className='line'></div>
           <div className="Movie-container">
             <PopularMovieList />
           </div>
