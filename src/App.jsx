@@ -15,6 +15,7 @@ const App = () => {
     return popularMovies.map((movie, i) => {
       return (
         <div className="Movie-wrapper" key={i}>
+          <a href="/error"><div className="overlay"></div></a>
           <div className="Movie-title">{movie.title}</div>
           <img className="Movie-image" src={`${process.env.REACT_APP_BASEIMGURL}/${movie.poster_path}`}/>
           <div className="Movie-date"><span className='release-date'>Release date: </span><br/>{movie.release_date}</div>
@@ -34,7 +35,7 @@ const App = () => {
   return (
       <div className="App">
         <header className="App-header">
-          <h1>KANDAKU<span className='text-movie'>MOVIE</span></h1>
+          <h1 className='h1-movie'>KANDAKU<span className='text-movie'>MOVIE</span></h1>
           <input 
             placeholder='cari apa ki...' 
             className='Movie-search'

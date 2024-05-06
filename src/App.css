@@ -29,8 +29,11 @@
   padding-bottom: 30px;
   padding-top: 15px;
 }
-
-h1{
+.h1-404{
+  font-size: 100px;
+  margin-bottom: 10px;
+}
+.h1-movie{
   padding: 50px 0;
 }
 .text-movie{
@@ -42,6 +45,18 @@ h1{
   border-radius: 15px;
   background-color: antiquewhite;
   color: black;
+}
+.overlay{
+  position: absolute;
+  height: 704.67px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  display: none;
+}
+.Movie-wrapper:hover .overlay{
+  cursor: pointer;
+  display: block;
 }
 
 .text-h2{
@@ -145,4 +160,15 @@ h1{
   .Movie-search{
     width: 295px;
   }
+}
+
+.error{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
