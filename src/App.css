@@ -54,6 +54,16 @@
   border-radius: 15px;
   display: none;
 }
+@media (max-width: 768px) {
+  .overlay{
+    position: absolute;
+    height: 442px;
+    width: 165px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    display: none;
+  }
+}
 .Movie-wrapper:hover .overlay{
   cursor: pointer;
   display: block;
