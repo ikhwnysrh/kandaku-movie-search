@@ -14,8 +14,7 @@ const App = () => {
   const PopularMovieList = () => {
     return popularMovies.map((movie, i) => {
       return (
-        <div className="Movie-wrapper" key={i}>
-          <a href="/error"><div className="overlay"></div></a>
+        <div className="Movie-wrapper" key={i} onClick={() => window.location.href = `/error`}>
           <div className="Movie-title">{movie.title}</div>
           <img className="Movie-image" src={`${process.env.REACT_APP_BASEIMGURL}/${movie.poster_path}`}/>
           <div className="Movie-date"><span className='release-date'>Release date: </span><br/>{movie.release_date}</div>
